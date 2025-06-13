@@ -29,12 +29,12 @@ public class BrandServiceImpl implements IBrandService {
     public Brand updateBrand(Brand brand) {
         return brandRepository.save(brand);
     }
-    public int deleteBrandById(Long id) {
+    public boolean deleteBrandById(Long id) {
         if (id != null && brandRepository.existsById(id)) {
             brandRepository.deleteById(id);
-            return 1;
+            return true;
         } else {
-            return 0;
+            return false;
         }
     }
 

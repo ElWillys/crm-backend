@@ -10,6 +10,6 @@ public interface IBrandService {
     List<Brand> findAllBrands();
     Optional<Brand> findByName(String name);
     Brand updateBrand(Brand brand);
-    int deleteBrandById(Long id);
+    boolean deleteBrandById(Long id);
 
 }
