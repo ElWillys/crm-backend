@@ -14,5 +14,9 @@ public class Role {
     @Column(nullable = false)
     private String name;
 
+    public enum UserRole {
+        ADMIN,
+        USER
+    }
 
 }

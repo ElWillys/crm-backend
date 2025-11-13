@@ -55,8 +55,8 @@ public class GeneralConstants {
     public static final String APPUSER_UPDATE_ERROR_MESSAGE = "No se pudo actualizar el usuario";
     public static final String APPUSER_DELETE_ERROR_MESSAGE = "No se pudo eliminar el usuario, puede que haya tareas asociadas";
     public static final String APPUSER_LOGIN_ERROR_MESSAGE = "Email o contraseña inválidos";
-    public static final String APPUSER_EMAIL_NOT_FOUND_MESSAGE = "No se encontró usuario con ese email";
-    public static final String APPUSER_NAME_SEARCH_ERROR_MESSAGE = "Error al buscar usuario por nombre";
+    public static final String APPUSER_EMAIL_NOT_FOUND_MESSAGE = "No se encontró usuario con este email";
+    public static final String APPUSER_NAME_SEARCH_ERROR_MESSAGE = "No se encontró usuario con este nombre";
     public static final String APPUSER_EMAIL_IN_USE_ERROR_MESSAGE = "Este correo electrónico ya existe";
 
     // Códigos y mensajes específicos para clientes
@@ -82,6 +82,17 @@ public class GeneralConstants {
     public static final String BRAND_UPDATE_ERROR_MESSAGE = "No se pudo actualizar la marcar";
     public static final String BRAND_DELETE_ERROR_MESSAGE = "No se pudo eliminar la marca, puede que haya tareas asociadas";
     public static final String BRAND_NOT_FOUND_MESSAGE = "La marca no se ha encontrado";
+
+    public static final int COMPANY_CREATION_ERROR_CODE = 600;
+    public static final int COMPANY_DELETION_ERROR_CODE = 601;
+    public static final int COMPANY_NOT_FOUND_ERROR_CODE = 602;
+
+
+    public static final String COMPANY_CREATION_ERROR_MESSAGE = "No se pudo crear la empresa";
+    public static final String COMPANY_DELETION_ERROR_MESSAGE = "No se pudo borrar la empresa";
+    public static final String COMPANY_NOT_FOUND_ERROR_MESSAGE = "La empresa no se ha encontrado";
+
+
 
 
 

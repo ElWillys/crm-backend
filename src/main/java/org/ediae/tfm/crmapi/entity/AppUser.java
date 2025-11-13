@@ -1,5 +1,7 @@
 package org.ediae.tfm.crmapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -26,4 +28,16 @@ public class AppUser {
     @JoinColumn(name = "role_id")
     private Role role;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    @JsonIgnoreProperties("users")
+    private Company company;
+
+    @Enumerated(EnumType.STRING)
+    private UserStatus status;
+    public enum UserStatus {
+        PENDING,
+        ACTIVE,
+        DISABLED
+    }
 }
